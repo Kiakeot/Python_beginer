@@ -1,10 +1,9 @@
 d = {"a":500, 'b':5874, "c":560, "d":400, "e":5874, "f":20}
-max1 = max(d).
-print(max1)
-remove(max1)
-max2 = max(d).
-print(max2)
-remove(max2)
-max3 = max(d).
-print(max3)
-remove(max3)
+print(d)
+max1 = max(d.values())
+for y in range(3):
+	for i in d.items():
+		if i[1] == max(d.values()):
+	 		d.pop(i[0])
+	 		break
+print(d)
